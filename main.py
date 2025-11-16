@@ -61,37 +61,36 @@ def send_verification_code(employee_name, code, action, email_override=None):
     return False
 
 EMPLOYEES = [
-    "Amir Rasheed", "Saleem Tariq", "Nauman Tariq", "Sajid Mehmood",
-    "Hamza Gulfraz", "Ansar Shabeer", "Umer Afraz", "M Haroon Rashid",
-    "Umair Aurangzaib", "Jawad Nisaar", "Farhan Ishfaq",
-    "Ateeq Mir", "Kashan Khursheed"
+    "Employee 1", "Employee 2", "Employee 3", "Employee 4",
+    "Employee 5", "Employee 6", "Employee 7", "Employee 8",
+    "Employee 9", "Employee 10", "Employee 11", "Employee 12", "Employee 13"
 ]
 
 # Employee emails - update these with actual emails
 EMPLOYEE_EMAILS = {
-    "Amir Rasheed": "amir@company.com",
-    "Saleem Tariq": "saleemtariq1098653@gmail.com",
-    "Nauman Tariq": "nauman@company.com",
-    "Sajid Mehmood": "sajid@company.com",
-    "Hamza Gulfraz": "hamza@company.com",
-    "Ansar Shabeer": "ansar@company.com",
-    "Umer Afraz": "umer@company.com",
-    "M Haroon Rashid": "zanrbs@gmail.com",
-    "Umair Aurangzaib": "umair@company.com",
-    "Jawad Nisaar": "jawad@company.com",
-    "Farhan Ishfaq": "farhan@company.com",
-    "Ateeq Mir": "ateeq@company.com",
-    "Kashan Khursheed": "kashan@company.com"
+    "Employee 1": "employee1@example.com",
+    "Employee 2": "employee2@example.com",
+    "Employee 3": "employee3@example.com",
+    "Employee 4": "employee4@example.com",
+    "Employee 5": "employee5@example.com",
+    "Employee 6": "employee6@example.com",
+    "Employee 7": "employee7@example.com",
+    "Employee 8": "employee8@example.com",
+    "Employee 9": "employee9@example.com",
+    "Employee 10": "employee10@example.com",
+    "Employee 11": "employee11@example.com",
+    "Employee 12": "employee12@example.com",
+    "Employee 13": "employee13@example.com"
 }
 
 # Map Windows usernames to employee names and their emails
 SYSTEM_USERNAME_MAP = {
-    "saleemtariq109": {"name": "Saleem Tariq", "email": "saleemtariq1098653@gmail.com"},
-    "RBS": {
-        "users": ["Saleem Tariq", "M Haroon Rashid", "Sajid Mehmood"]  # People who can use this account
+    "user1": {"name": "Employee 1", "email": "employee1@example.com"},
+    "shared_pc": {
+        "users": ["Employee 2", "Employee 3", "Employee 4"]
     },
-    "ANSAR SHABEER": {"name": "Ansar Shabeer", "email": "ansar@company.com"},  # <-- add this
-    "abubakar": {"name": "Saleem Tariq", "email": "saleemtariq1098653@gmail.com"}
+    "user2": {"name": "Employee 5", "email": "employee5@example.com"},
+    "user3": {"name": "Employee 1", "email": "employee1@example.com"}
 }
 
 # Create a lower-cased lookup map so username matching is case-insensitive
